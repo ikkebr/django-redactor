@@ -109,7 +109,7 @@ class RedactorEditor(Textarea):
             html += self.script_tag % self.redactor_settings.replace('\n', '')
         else:
             html += self.script_tag % json.dumps(self.redactor_settings, cls=LazyEncoder)
-        return mark_safe(html)
+        return mark_safe("<br><br>" + html)
 
 
 class AdminRedactorEditor(RedactorEditor):

@@ -12,6 +12,13 @@ var Redactor = (function ($) {
             var settings = redactor_attrs[i];
             // Add a class to the field's label in the Django admin so it can
             // be styled as well.
+			
+			settings.imageUpload = '/redactor/upload/image/',
+            //settings.imageGetJson = '/redactor/do-photos-recent/',
+            settings.minHeight =200;
+            //settings.iframe = true;
+
+			
             $(this).parent("div").find("label").addClass("redactor_label");
             $(this).redactor(settings);
         });

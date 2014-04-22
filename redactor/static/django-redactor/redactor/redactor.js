@@ -117,9 +117,9 @@
 			imageFloatMargin: '10px',
 			imageGetJson: false, // url (ex. /folder/images.json ) or false
 
-			imageUpload: false, // url
+			imageUpload: true, // url
 			imageUploadParam: 'file', // input name
-			fileUpload: false, // url
+			fileUpload: true, // url
 			fileUploadParam: 'file', // input name
 			clipboardUpload: true, // or false
 			clipboardUploadUrl: false, // url
@@ -2755,8 +2755,8 @@
 					var block = $('<div data-tagblock="">').html($(newblock).html());
 					$(newblock).replaceWith(block);
 
-					var left = this.normalize($(block).css('margin-left')) + this.opts.indentValue;
-					$(block).css('margin-left', left + 'px');
+					//var left = this.normalize($(block).css('margin-left')) + this.opts.indentValue;
+					//$(block).css('margin-left', left + 'px');
 				}
 				else
 				{
